@@ -66,7 +66,7 @@ public class POC {
             public void run() {
                 try {
                     player.initialize();
-                    player.changeInstrument(25);
+                    //player.changeInstrument(25);
                 } catch (MidiUnavailableException e) {
                     e.printStackTrace();
                 }
