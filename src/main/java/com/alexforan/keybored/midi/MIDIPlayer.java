@@ -17,10 +17,22 @@ public class MIDIPlayer {
     
     public MIDIPlayer(MidiDevice device) throws MidiUnavailableException  {
         this.device = device;
-        this.device.open();
-        receiver = device.getReceiver();
+        receiver = null;
         noteStates = new HashMap<>();
         velocity = 127;
+    }
+    
+    public void initialize() throws MidiUnavailableException {
+        device.open();
+        receiver = device.getReceiver();
+    }
+    
+    public void changeInstrument(int patch) {
+        try {
+            receiver.send(new ShortMessage(ShortMessage.PROGRAM_CHANGE, patch, 0), 2);
+        } catch (InvalidMidiDataException e) {
+            throw new RuntimeException(e);
+        }
     }
     
     public synchronized void play(int note) {
