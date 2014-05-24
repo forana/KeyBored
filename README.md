@@ -18,7 +18,8 @@ gfjh kjlk ewre tryu ty
 ```
 
 ## Downloads
-TODO
+
+* [SUPER alpha demo](https://github.com/forana/KeyBored/blob/builds/KeyBored-4.0.0-alpha.jar?raw=true)
 
 ## Building from source
 
