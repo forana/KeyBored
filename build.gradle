@@ -1,0 +1,35 @@
+apply plugin: "java"
+apply plugin: "eclipse"
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "eu.appsatori:gradle-fatjar-plugin:0.2-rc1"
+    }
+}
+
+apply plugin: 'fatjar'
+
+repositories {
+	mavenCentral()
+	flatDir {
+		dirs 'libs'
+	}
+}
+
+dependencies {
+   compile "com.fasterxml.jackson.core:jackson-databind:2.3.3"
+   compile name: "JNativeHook-1.1.4"
+   compile name: "gervill-1.0.0"
+}
+
+sourceCompatibility = 1.7
+version = "0.1.0"
+fatJar {
+    manifest {
+        attributes "Main-Class": "com.alexforan.keybored.KeyTest"
+    }
+}
