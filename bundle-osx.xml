@@ -29,7 +29,7 @@
 			shortversion="${version}"
 			applicationCategory="public.app-category.music"
 			mainclassname="${mainclass}"
-			copyright="2012 Alex Foran">
+			copyright="2014 Alex Foran">
 			<classpath file="build/libs/KeyBored-${version}.jar" />
 		</bundleapp>
 	</target>
