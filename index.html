@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="KeyBored : Plays notes when you press keys, no matter what program you&#39;re in." />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>KeyBored</title>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>KeyBored by forana</title>
   </head>
 
   <body>
+    <div id="container">
+      <div class="inner">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/forana/KeyBored">View on GitHub</a>
-
-          <h1 id="project_title">KeyBored</h1>
-          <h2 id="project_tagline">Plays notes when you press keys, no matter what program you&#39;re in.</h2>
+        <header>
+          <h1>KeyBored</h1>
+          <h2>Plays notes when you press keys, no matter what program you&#39;re in.</h2>
         </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/forana/KeyBored/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/forana/KeyBored/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/forana/KeyBored" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
 <a name="keybored" class="anchor" href="#keybored"><span class="octicon octicon-link"></span></a>KeyBored</h1>
 
 <p>Plays notes when you press keys, no matter what program you're in.</p>
@@ -46,16 +51,25 @@ ghj kle reh
 gfjh kjlk ewre tryu ty
 </code></pre>
 
+<p><a href="https://github.com/forana/KeyBored/wiki/Songs">Check out the KeyBored wiki for more songs to play!</a></p>
+
+<h2>
+<a name="screenshot" class="anchor" href="#screenshot"><span class="octicon octicon-link"></span></a>Screenshot</h2>
+
+<p><img src="./screenshot.png?raw=true" alt="screenshot"></p>
+
 <h2>
 <a name="downloads" class="anchor" href="#downloads"><span class="octicon octicon-link"></span></a>Downloads</h2>
+
+<p>All downloads require <a href="https://www.java.com/en/download/">Java 7 (or higher)</a> to be installed in order to run.</p>
 
 <ul>
 <li>4.0.0
 
 <ul>
-<li><a href="https://github.com/forana/KeyBored/blob/builds/KeyBored-4.0.0.jar?raw=true">universal (jar)</a></li>
-<li><a href="https://github.com/forana/KeyBored/blob/builds/KeyBored-4.0.0-OSX.zip?raw=true">OS X (java 7 required)</a></li>
-<li><a href="https://github.com/forana/KeyBored/blob/builds/KeyBored-4.0.0-Windows.zip?raw=true">Windows (java 7 required)</a></li>
+<li><a href="https://github.com/forana/KeyBored/releases/download/4.0.0/KeyBored-4.0.0.jar">universal (jar)</a></li>
+<li><a href="https://github.com/forana/KeyBored/releases/download/4.0.0/KeyBored-4.0.0-OSX.zip">OS X</a></li>
+<li><a href="https://github.com/forana/KeyBored/releases/download/4.0.0/KeyBored-4.0.0-Windows.zip">Windows</a></li>
 </ul>
 </li>
 </ul><p>(OS X - I have only tested Mavericks. Windows - I have only tested Windows 7 x64. I haven't tested anything else - would appreciate pull requests to fix it if some OS isn't supported)</p>
@@ -89,7 +103,7 @@ gfjh kjlk ewre tryu ty
 <li>Resulting .exe will be in <code>build</code>
 </li>
 </ol><h2>
-<a name="faq" class="anchor" href="#faq"><span class="octicon octicon-link"></span></a>FAQ</h2>
+<a name="faq--troubleshooting" class="anchor" href="#faq--troubleshooting"><span class="octicon octicon-link"></span></a>FAQ / Troubleshooting</h2>
 
 <h3>
 <a name="isnt-this-a-clone-of-a-program-i-saw-6-years-ago" class="anchor" href="#isnt-this-a-clone-of-a-program-i-saw-6-years-ago"><span class="octicon octicon-link"></span></a>Isn't this a clone of a program I saw 6 years ago?</h3>
@@ -107,14 +121,19 @@ gfjh kjlk ewre tryu ty
 <p>OS X needs to have the app (or java jar launcher, or IDE, or termal app) specifically enabled for assistive devices. See <a href="http://support.apple.com/kb/HT6026">Apple's knowledgebase</a> for how to do that in Mavericks.</p>
 
 <h3>
-<a name="my-antivirus-thinks-this-is-a-viruskeylogger" class="anchor" href="#my-antivirus-thinks-this-is-a-viruskeylogger"><span class="octicon octicon-link"></span></a>My antivirus thinks this is a virus/keylogger</h3>
+<a name="my-antivirus-thinks-this-is-a-viruskeylogger" class="anchor" href="#my-antivirus-thinks-this-is-a-viruskeylogger"><span class="octicon octicon-link"></span></a>My antivirus thinks this is a virus/keylogger.</h3>
 
 <p>It isn't - check the source. It sets off some red flags because it's listening for keyboard activity globally, which is something keyloggers do.</p>
 
 <h3>
 <a name="i-closed-the-window-but-the-sounds-keep-happening-oh-my-god-make-it-stop" class="anchor" href="#i-closed-the-window-but-the-sounds-keep-happening-oh-my-god-make-it-stop"><span class="octicon octicon-link"></span></a>I closed the window, but the sounds keep happening oh my god make it stop</h3>
 
-<p>If your OS supports a tray (windows and OSX do), it's minimized to the tray. Right-click the icon and select "Quit KeyBored" to make it stop.</p>
+<p>If your OS supports a tray (Windows and OSX do), it's minimized to the tray. Right-click the icon and select "Quit KeyBored" to make it stop.</p>
+
+<h3>
+<a name="i-have-a-problem-that-isnt-listed-here" class="anchor" href="#i-have-a-problem-that-isnt-listed-here"><span class="octicon octicon-link"></span></a>I have a problem that isn't listed here.</h3>
+
+<p>Take a look at the <a href="https://github.com/forana/KeyBored/issues">issues list</a>. If you search and don't see your issue already mentioned, go ahead and open a new one.</p>
 
 <h2>
 <a name="licenses" class="anchor" href="#licenses"><span class="octicon octicon-link"></span></a>Licenses</h2>
@@ -132,18 +151,14 @@ gfjh kjlk ewre tryu ty
 <a href="https://java.net/projects/gervill/pages/Home">Gervill</a> - GPL v2 with <a href="http://www.gnu.org/software/classpath/license.html">Classpath exception</a>
 </li>
 </ul>
-      </section>
-    </div>
+        </section>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">KeyBored maintained by <a href="https://github.com/forana">forana</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+        <footer>
+          KeyBored is maintained by <a href="https://github.com/forana">forana</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
 
-              <script type="text/javascript">
+                  <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -154,6 +169,7 @@ gfjh kjlk ewre tryu ty
             } catch(err) {}
           </script>
 
-
+      </div>
+    </div>
   </body>
 </html>
