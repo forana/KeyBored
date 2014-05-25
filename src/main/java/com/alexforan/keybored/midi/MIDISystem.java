@@ -12,7 +12,12 @@ public class MIDISystem {
         List<MidiDevice> list = new LinkedList<>();
         for (MidiDevice.Info info : MidiSystem.getMidiDeviceInfo()) {
             MidiDevice device = MidiSystem.getMidiDevice(info);
-            if (device.getMaxReceivers() != 0) {
+            if (device.getMaxReceivers() != 0 &&
+                    /* stupid code deserves an explanation - this is a sun-provided
+                     * device that reports itself as being a receiver, but behaves
+                     * in unexpected and mysterious ways.
+                     */
+                    !device.getClass().getName().equals("com.sun.media.sound.RealTimeSequencer")) {
                 list.add(device);
             }
         }

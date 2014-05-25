@@ -56,7 +56,7 @@ public class MIDIPlayer {
         }
     }
     
-    public void stopAll() throws InvalidMidiDataException {
+    public void stopAll() {
         for (int note : noteStates.keySet()) {
             if (noteStates.get(note)) {
                 stop(note);

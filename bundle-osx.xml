@@ -1,0 +1,36 @@
+<project default="bundle" basedir=".">
+	<property name="version" value="4.0.0" />
+	<property name="iconsetDir" value="src/main/resources/app.iconset" />
+	<property name="identifier" value="com.alexforan.keybored.KeyBored" />
+	<property name="mainclass" value="com/alexforan/keybored/KeyBored" />
+
+	<exec executable="/usr/libexec/java_home" outputproperty="javahome" />
+
+	<taskdef name="bundleapp"
+		classname="com.oracle.appbundler.AppBundlerTask"
+		classpath="build-libs/appbundler-1.0.jar" />
+
+	<target name="icns">
+		<exec executable="iconutil">
+			<arg value="--convert" />
+			<arg value="icns" />
+			<arg value="--output" />
+			<arg value="build/icon.icns" />
+			<arg value="${iconsetDir}" />
+		</exec>
+	</target>
+
+	<target name="bundle" depends="icns">
+		<bundleapp outputdirectory="build"
+			name="KeyBored-${version}"
+			displayname="KeyBored"
+			identifier="${identifier}"
+			icon="build/icon.icns"
+			shortversion="${version}"
+			applicationCategory="public.app-category.music"
+			mainclassname="${mainclass}"
+			copyright="2012 Alex Foran">
+			<classpath file="build/libs/KeyBored-${version}.jar" />
+		</bundleapp>
+	</target>
+</project>

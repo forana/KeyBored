@@ -25,8 +25,7 @@ public class KeyAdapter {
         try {
             GlobalScreen.registerNativeHook();
         } catch (NativeHookException e) {
-            e.printStackTrace();
-            System.exit(-1);
+            throw new RuntimeException(e);
         }
         
         GlobalScreen.getInstance().addNativeKeyListener(new NativeKeyListener() {
@@ -58,13 +57,15 @@ public class KeyAdapter {
         });
     }
     
-    
-    
     public void addListener(KeyAdapterListener listener) {
         listeners.add(listener);
     }
     
     public boolean removeListener(KeyAdapterListener listener) {
         return listeners.remove(listener);
+    }
+    
+    public void close() {
+        GlobalScreen.unregisterNativeHook();
     }
 }

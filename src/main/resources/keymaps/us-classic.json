@@ -4,7 +4,7 @@
     "description": "The classic KeyBored layout, for US keyboards.",
     "date": "2014-05-24",
     "normalKeys": {
-        "A": 43,
+        "Z": 43,
         "X": 45,
         "C": 47,
         "V": 48,
