@@ -22,6 +22,9 @@ gfjh kjlk ewre tryu ty
 * 4.0.0
     * [universal (jar)](https://github.com/forana/KeyBored/blob/builds/KeyBored-4.0.0.jar?raw=true)
     * [OS X (java 7 required)](https://github.com/forana/KeyBored/blob/builds/KeyBored-4.0.0-OSX.zip?raw=true)
+    * [Windows (java 7 required)](https://github.com/forana/KeyBored/blob/builds/KeyBored-4.0.0-Windows.zip?raw=true)
+
+(OS X - I have only tested Mavericks. Windows - I have only tested Windows 7 x64. I haven't tested anything else - would appreciate pull requests to fix it if some OS isn't supported)
 
 ## Building from source
 
@@ -31,17 +34,19 @@ gfjh kjlk ewre tryu ty
 2. Run `gradle fatjar` (install gradle if needed)
 3. Resulting jar will be in `build/libs` - this should be runnable.
 
+(to create Eclipse project, run `gradle eclipse`)
+
 ### OS X
 
 1. Build the jar
-2. Run `ant -f bundle-osx.xml` (install ant if needed)
+2. Run `ant -f bundle-osx.xml` (install ant if needed, or just run this from eclipse)
 3. Resulting .app will be in `build`
-
 
 ### Windows
 
-TODO
-
+1. Build the jar
+2. Run `ant -f bundle-windows.xml` (install ant if needed, or just run this from eclipse)
+3. Resulting .exe will be in `build`
 
 ## FAQ
 ### Isn't this a clone of a program I saw 6 years ago?
@@ -55,6 +60,9 @@ OS X needs to have the app (or java jar launcher, or IDE, or termal app) specifi
 
 ### My antivirus thinks this is a virus/keylogger
 It isn't - check the source. It sets off some red flags because it's listening for keyboard activity globally, which is something keyloggers do.
+
+### I closed the window, but the sounds keep happening oh my god make it stop
+If your OS supports a tray (windows and OSX do), it's minimized to the tray. Right-click the icon and select "Quit KeyBored" to make it stop.
 
 ## Licenses
 KeyBored itself - MIT
