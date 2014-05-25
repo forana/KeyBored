@@ -3,6 +3,7 @@ package com.alexforan.keybored.ui;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.Image;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -39,13 +40,13 @@ public class ControlWindow {
     private boolean playerInitialized;
     private boolean suspended;
     
-    public ControlWindow(boolean exitOnClose) throws MidiUnavailableException, IOException {
+    public ControlWindow(Image iconImage, boolean exitOnClose) throws MidiUnavailableException, IOException {
         devices = MIDISystem.getReceivableDevices();
         player = new MIDIPlayer(devices.get(0));
         loadKeyMap();
         
         frame = new JFrame();
-        setupFrame(exitOnClose);
+        setupFrame(iconImage, exitOnClose);
         
         setupKeyListener();
         
@@ -58,8 +59,9 @@ public class ControlWindow {
     }
     
     @SuppressWarnings("serial")
-    private void setupFrame(final boolean exitOnClose) {
+    private void setupFrame(Image iconImage, final boolean exitOnClose) {
         frame.setTitle("KeyBored Settings");
+        frame.setIconImage(iconImage);
         frame.setDefaultCloseOperation(exitOnClose ? JFrame.EXIT_ON_CLOSE : JFrame.HIDE_ON_CLOSE);
         frame.setMinimumSize(new Dimension(400, 300));
         frame.setAutoRequestFocus(true);
