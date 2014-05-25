@@ -85,8 +85,4 @@ Dependencies:
 * [Gervill](https://java.net/projects/gervill/pages/Home) - GPL v2 with [Classpath exception](http://www.gnu.org/software/classpath/license.html)
 
 <!-- hack for github page generation -->
-<style>
-   header.inner section#downloads {
-      display: none;
-   }
-</style>
+<link rel="stylesheet" type="text/css" href="hack.css" />
