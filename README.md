@@ -83,3 +83,10 @@ Dependencies:
 * [Jackson](http://wiki.fasterxml.com/JacksonDownload) - Lesser GPL
 * [JNativeHook](https://github.com/kwhat/jnativehook) - Lesser GPL
 * [Gervill](https://java.net/projects/gervill/pages/Home) - GPL v2 with [Classpath exception](http://www.gnu.org/software/classpath/license.html)
+
+<!-- hack for github page generation -->
+<style>
+   header.inner section#downloads {
+      display: none;
+   }
+</style>
