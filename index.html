@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="KeyBored : Plays notes when you press keys, no matter what program you&#39;re in." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>KeyBored</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/forana/KeyBored">View on GitHub</a>
+
+          <h1 id="project_title">KeyBored</h1>
+          <h2 id="project_tagline">Plays notes when you press keys, no matter what program you&#39;re in.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/forana/KeyBored/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/forana/KeyBored/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="keybored" class="anchor" href="#keybored"><span class="octicon octicon-link"></span></a>KeyBored</h1>
+
+<p>Plays notes when you press keys, no matter what program you're in.</p>
+
+<p>Try typing this anywhere while running KeyBored - if you're a fan of Zelda, you might recognize the notes. (spaces are for timing - don't try to type them)</p>
+
+<pre><code>jle jle jleyt
+erekh ghkh
+
+jle jle jleyt
+eryek ekgh
+
+ghj kle reh
+ghj kle rty
+
+ghj kle reh
+gfjh kjlk ewre tryu ty
+</code></pre>
+
+<h2>
+<a name="downloads" class="anchor" href="#downloads"><span class="octicon octicon-link"></span></a>Downloads</h2>
+
+<ul>
+<li>4.0.0
+
+<ul>
+<li><a href="https://github.com/forana/KeyBored/blob/builds/KeyBored-4.0.0.jar?raw=true">universal (jar)</a></li>
+<li><a href="https://github.com/forana/KeyBored/blob/builds/KeyBored-4.0.0-OSX.zip?raw=true">OS X (java 7 required)</a></li>
+<li><a href="https://github.com/forana/KeyBored/blob/builds/KeyBored-4.0.0-Windows.zip?raw=true">Windows (java 7 required)</a></li>
+</ul>
+</li>
+</ul><p>(OS X - I have only tested Mavericks. Windows - I have only tested Windows 7 x64. I haven't tested anything else - would appreciate pull requests to fix it if some OS isn't supported)</p>
+
+<h2>
+<a name="building-from-source" class="anchor" href="#building-from-source"><span class="octicon octicon-link"></span></a>Building from source</h2>
+
+<h3>
+<a name="jar" class="anchor" href="#jar"><span class="octicon octicon-link"></span></a>JAR</h3>
+
+<ol>
+<li>Close this repo</li>
+<li>Run <code>gradle fatjar</code> (install gradle if needed)</li>
+<li>Resulting jar will be in <code>build/libs</code> - this should be runnable.</li>
+</ol><p>(to create Eclipse project, run <code>gradle eclipse</code>)</p>
+
+<h3>
+<a name="os-x" class="anchor" href="#os-x"><span class="octicon octicon-link"></span></a>OS X</h3>
+
+<ol>
+<li>Build the jar</li>
+<li>Run <code>ant -f bundle-osx.xml</code> (install ant if needed, or just run this from eclipse)</li>
+<li>Resulting .app will be in <code>build</code>
+</li>
+</ol><h3>
+<a name="windows" class="anchor" href="#windows"><span class="octicon octicon-link"></span></a>Windows</h3>
+
+<ol>
+<li>Build the jar</li>
+<li>Run <code>ant -f bundle-windows.xml</code> (install ant if needed, or just run this from eclipse)</li>
+<li>Resulting .exe will be in <code>build</code>
+</li>
+</ol><h2>
+<a name="faq" class="anchor" href="#faq"><span class="octicon octicon-link"></span></a>FAQ</h2>
+
+<h3>
+<a name="isnt-this-a-clone-of-a-program-i-saw-6-years-ago" class="anchor" href="#isnt-this-a-clone-of-a-program-i-saw-6-years-ago"><span class="octicon octicon-link"></span></a>Isn't this a clone of a program I saw 6 years ago?</h3>
+
+<p>Yep! I wrote that one, too. I've been meaning to get a proper version of it out there since 2009.</p>
+
+<h3>
+<a name="it-says-version-4-where-are-the-others" class="anchor" href="#it-says-version-4-where-are-the-others"><span class="octicon octicon-link"></span></a>It says version 4? Where are the others?</h3>
+
+<p>Version 1 was a bare-bones command line Windows application that <em>worked</em> but had many problems. Version 2 was a hackmess of java and C++ that also only ran on Windows, but was more flexible. Version 3 was a pure-java attempt when I didn't really know what I was doing, yet. That last one's on sourceforge if you really want to google it - the source for the other two is lost to time (and frankly, I'm ok with that - it was really really bad).</p>
+
+<h3>
+<a name="im-getting-an-error-on-os-x-like-assistive-device-not-enabled-help" class="anchor" href="#im-getting-an-error-on-os-x-like-assistive-device-not-enabled-help"><span class="octicon octicon-link"></span></a>I'm getting an error on OS X like "Assistive Device not enabled," help</h3>
+
+<p>OS X needs to have the app (or java jar launcher, or IDE, or termal app) specifically enabled for assistive devices. See <a href="http://support.apple.com/kb/HT6026">Apple's knowledgebase</a> for how to do that in Mavericks.</p>
+
+<h3>
+<a name="my-antivirus-thinks-this-is-a-viruskeylogger" class="anchor" href="#my-antivirus-thinks-this-is-a-viruskeylogger"><span class="octicon octicon-link"></span></a>My antivirus thinks this is a virus/keylogger</h3>
+
+<p>It isn't - check the source. It sets off some red flags because it's listening for keyboard activity globally, which is something keyloggers do.</p>
+
+<h3>
+<a name="i-closed-the-window-but-the-sounds-keep-happening-oh-my-god-make-it-stop" class="anchor" href="#i-closed-the-window-but-the-sounds-keep-happening-oh-my-god-make-it-stop"><span class="octicon octicon-link"></span></a>I closed the window, but the sounds keep happening oh my god make it stop</h3>
+
+<p>If your OS supports a tray (windows and OSX do), it's minimized to the tray. Right-click the icon and select "Quit KeyBored" to make it stop.</p>
+
+<h2>
+<a name="licenses" class="anchor" href="#licenses"><span class="octicon octicon-link"></span></a>Licenses</h2>
+
+<p>KeyBored itself - MIT</p>
+
+<p>Dependencies:</p>
+
+<ul>
+<li>
+<a href="http://wiki.fasterxml.com/JacksonDownload">Jackson</a> - Lesser GPL</li>
+<li>
+<a href="https://github.com/kwhat/jnativehook">JNativeHook</a> - Lesser GPL</li>
+<li>
+<a href="https://java.net/projects/gervill/pages/Home">Gervill</a> - GPL v2 with <a href="http://www.gnu.org/software/classpath/license.html">Classpath exception</a>
+</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">KeyBored maintained by <a href="https://github.com/forana">forana</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-51280055-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
