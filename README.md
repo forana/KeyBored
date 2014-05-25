@@ -1,20 +1,10 @@
-# KeyBored
-Plays notes when you press keys, no matter what program you're in.
-
-Try typing this anywhere while running KeyBored - if you're a fan of Zelda, you might recognize the notes. (spaces are for timing - don't try to type them)
+Try typing this anywhere while running KeyBored. (spaces are for timing - don't try to type them)
 
 ```
-jle jle jleyt
-erekh ghkh
-
-jle jle jleyt
-eryek ekgh
-
-ghj kle reh
-ghj kle rty
-
-ghj kle reh
-gfjh kjlk ewre tryu ty
+ffgfjh
+ffgfkj
+ffrljhg
+LLljkj
 ```
 
 [Check out the KeyBored wiki for more songs to play!](https://github.com/forana/KeyBored/wiki/Songs)
