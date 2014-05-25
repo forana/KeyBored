@@ -17,6 +17,10 @@ ghj kle reh
 gfjh kjlk ewre tryu ty
 ```
 
+[Check out the KeyBored wiki for more songs to play!](https://github.com/forana/KeyBored/wiki/Songs)
+
+## Screenshot
+
 ![screenshot](./screenshot.png?raw=true)
 
 ## Downloads
