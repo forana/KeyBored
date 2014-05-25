@@ -21,10 +21,12 @@ gfjh kjlk ewre tryu ty
 
 ## Downloads
 
+All downloads require [Java 7 (or higher)](https://www.java.com/en/download/) to be installed in order to run.
+
 * 4.0.0
-    * [universal (jar)](https://github.com/forana/KeyBored/blob/builds/KeyBored-4.0.0.jar?raw=true)
-    * [OS X (java 7 required)](https://github.com/forana/KeyBored/blob/builds/KeyBored-4.0.0-OSX.zip?raw=true)
-    * [Windows (java 7 required)](https://github.com/forana/KeyBored/blob/builds/KeyBored-4.0.0-Windows.zip?raw=true)
+    * [universal (jar)](https://github.com/forana/KeyBored/releases/download/4.0.0/KeyBored-4.0.0.jar)
+    * [OS X](https://github.com/forana/KeyBored/releases/download/4.0.0/KeyBored-4.0.0-OSX.zip)
+    * [Windows](https://github.com/forana/KeyBored/releases/download/4.0.0/KeyBored-4.0.0-Windows.zip)
 
 (OS X - I have only tested Mavericks. Windows - I have only tested Windows 7 x64. I haven't tested anything else - would appreciate pull requests to fix it if some OS isn't supported)
 
