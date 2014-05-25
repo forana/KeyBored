@@ -7,7 +7,7 @@ import java.lang.reflect.Method;
  * Better name for this class: "OS X standardizer"
  */
 public class OS {
-    private static final boolean IS_OSX = System.getProperty("os.name").contains("OS X");
+    public static final boolean IS_OSX = System.getProperty("os.name").contains("OS X");
     
     public static void setDockIcon(Image image) {
         if (IS_OSX) {

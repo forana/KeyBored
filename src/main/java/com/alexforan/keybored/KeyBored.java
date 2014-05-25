@@ -1,6 +1,7 @@
 package com.alexforan.keybored;
 
 import java.awt.CheckboxMenuItem;
+import java.awt.Image;
 import java.awt.MenuItem;
 import java.awt.PopupMenu;
 import java.awt.SystemTray;
@@ -9,7 +10,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
-import java.awt.image.BufferedImage;
 
 import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
@@ -25,14 +25,18 @@ public class KeyBored {
         try {
             KeyAdapter.getInstance().initialize();
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-            BufferedImage iconImage = ImageIO.read(KeyBored.class.getResource("/app.iconset/icon_64x64.png"));
+            Image iconImage = ImageIO.read(KeyBored.class.getResource("/app.iconset/icon_64x64.png"));
             OS.setDockIcon(iconImage);
             OS.enableSuddenTermination();
             
             final ControlWindow window = new ControlWindow(iconImage, !SystemTray.isSupported());
             
+            if (!OS.IS_OSX) {
+                iconImage = iconImage.getScaledInstance(16, 16, 0);
+            }
+            
             if (SystemTray.isSupported()) {
-	            final TrayIcon icon = new TrayIcon(iconImage.getScaledInstance(16, 16, 0), "KeyBored");
+	            final TrayIcon icon = new TrayIcon(iconImage, "KeyBored");
 	            icon.setPopupMenu(new PopupMenu() {{
 	                add(new MenuItem("Settings...") {{
 	                    addActionListener(new ActionListener() {
