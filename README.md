@@ -21,7 +21,7 @@ gfjh kjlk ewre tryu ty
 
 ## Screenshot
 
-![screenshot](./screenshot.png?raw=true)
+![screenshot](https://github.com/forana/KeyBored/raw/development/screenshot.png?raw=true)
 
 ## Downloads
 
