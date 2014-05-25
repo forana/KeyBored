@@ -19,13 +19,29 @@ gfjh kjlk ewre tryu ty
 
 ## Downloads
 
-* [SUPER alpha demo](https://github.com/forana/KeyBored/blob/builds/KeyBored-4.0.0-alpha.jar?raw=true)
+* 4.0.0
+    * [universal (jar)](https://github.com/forana/KeyBored/blob/builds/KeyBored-4.0.0.jar?raw=true)
+    * [OS X (java 7 required)](https://github.com/forana/KeyBored/blob/builds/KeyBored-4.0.0-OSX.zip?raw=true)
 
 ## Building from source
+
+### JAR
 
 1. Close this repo
 2. Run `gradle fatjar` (install gradle if needed)
 3. Resulting jar will be in `build/libs` - this should be runnable.
+
+### OS X
+
+1. Build the jar
+2. Run `ant -f bundle-osx.xml` (install ant if needed)
+3. Resulting .app will be in `build`
+
+
+### Windows
+
+TODO
+
 
 ## FAQ
 ### Isn't this a clone of a program I saw 6 years ago?
@@ -41,7 +57,7 @@ OS X needs to have the app (or java jar launcher, or IDE, or termal app) specifi
 It isn't - check the source. It sets off some red flags because it's listening for keyboard activity globally, which is something keyloggers do.
 
 ## Licenses
-KeyBored itself - TODO
+KeyBored itself - MIT
 
 Dependencies:
 
