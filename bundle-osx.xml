@@ -22,7 +22,7 @@
 
 	<target name="bundle" depends="icns">
 		<bundleapp outputdirectory="build"
-			name="KeyBored-${version}"
+			name="KeyBored"
 			displayname="KeyBored"
 			identifier="${identifier}"
 			icon="build/icon.icns"
