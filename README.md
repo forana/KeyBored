@@ -17,6 +17,8 @@ ghj kle reh
 gfjh kjlk ewre tryu ty
 ```
 
+![screenshot](./screenshot.png?raw=true)
+
 ## Downloads
 
 * 4.0.0
@@ -48,7 +50,7 @@ gfjh kjlk ewre tryu ty
 2. Run `ant -f bundle-windows.xml` (install ant if needed, or just run this from eclipse)
 3. Resulting .exe will be in `build`
 
-## FAQ
+## FAQ / Troubleshooting
 ### Isn't this a clone of a program I saw 6 years ago?
 Yep! I wrote that one, too. I've been meaning to get a proper version of it out there since 2009.
 
@@ -58,11 +60,14 @@ Version 1 was a bare-bones command line Windows application that _worked_ but ha
 ### I'm getting an error on OS X like "Assistive Device not enabled," help
 OS X needs to have the app (or java jar launcher, or IDE, or termal app) specifically enabled for assistive devices. See [Apple's knowledgebase](http://support.apple.com/kb/HT6026) for how to do that in Mavericks.
 
-### My antivirus thinks this is a virus/keylogger
+### My antivirus thinks this is a virus/keylogger.
 It isn't - check the source. It sets off some red flags because it's listening for keyboard activity globally, which is something keyloggers do.
 
 ### I closed the window, but the sounds keep happening oh my god make it stop
-If your OS supports a tray (windows and OSX do), it's minimized to the tray. Right-click the icon and select "Quit KeyBored" to make it stop.
+If your OS supports a tray (Windows and OSX do), it's minimized to the tray. Right-click the icon and select "Quit KeyBored" to make it stop.
+
+### I have a problem that isn't listed here.
+Take a look at the [issues list](https://github.com/forana/KeyBored/issues). If you search and don't see your issue already mentioned, go ahead and open a new one.
 
 ## Licenses
 KeyBored itself - MIT
