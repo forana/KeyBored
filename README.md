@@ -28,7 +28,7 @@ All downloads require [Java 7 (or higher)](https://www.java.com/en/download/) to
 
 ### JAR
 
-1. Close this repo
+1. Clone this repo
 2. Run `gradle fatjar` (install gradle if needed)
 3. Resulting jar will be in `build/libs` - this should be runnable.
 
@@ -42,7 +42,10 @@ All downloads require [Java 7 (or higher)](https://www.java.com/en/download/) to
 
 ### Windows
 
+(need to have Launch4J installed in order to build)
+
 1. Build the jar
+2. Edit `bundle-windows.xml` to point to your Launch4J installation
 2. Run `ant -f bundle-windows.xml` (install ant if needed, or just run this from eclipse)
 3. Resulting .exe will be in `build`
 
