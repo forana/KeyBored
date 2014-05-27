@@ -218,6 +218,7 @@ public class ControlWindow {
                     try {
                         player.initialize();
                         playerInitialized = true;
+                        KeyAdapter.getInstance().initialize();
                     } catch (MidiUnavailableException e) {
                         // no choice
                         throw new RuntimeException(e);

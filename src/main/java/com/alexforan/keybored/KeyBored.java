@@ -15,7 +15,6 @@ import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 
-import com.alexforan.keybored.input.KeyAdapter;
 import com.alexforan.keybored.ui.ControlWindow;
 import com.alexforan.keybored.ui.OS;
 
@@ -23,7 +22,6 @@ public class KeyBored {
     @SuppressWarnings("serial")
     public static void main(String[] args) {
         try {
-            KeyAdapter.getInstance().initialize();
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
             Image iconImage = ImageIO.read(KeyBored.class.getResource("/app.iconset/icon_64x64.png"));
             OS.setDockIcon(iconImage);
