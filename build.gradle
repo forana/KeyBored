@@ -3,18 +3,18 @@ apply plugin: "eclipse"
 
 buildscript {
     repositories {
-        mavenCentral()
+        jcenter()
     }
 
     dependencies {
-        classpath "eu.appsatori:gradle-fatjar-plugin:0.2-rc1"
+        classpath "eu.appsatori:gradle-fatjar-plugin:0.3"
     }
 }
 
-apply plugin: 'fatjar'
+apply plugin: 'eu.appsatori.fatjar'
 
 repositories {
-	mavenCentral()
+	jcenter()
 	flatDir {
 		dirs 'libs'
 	}
@@ -27,7 +27,7 @@ dependencies {
 }
 
 sourceCompatibility = 1.7
-version = "4.0.0"
+version = "4.0.1"
 fatJar {
     manifest {
         attributes "Main-Class": "com.alexforan.keybored.KeyBored"
